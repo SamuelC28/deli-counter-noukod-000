@@ -4,7 +4,7 @@ def take_a_number(katz_deli, name)
     katz_deli << name
     katz_deli.count
 end
-
+take_a_number(katz_deli, name)
 # p take_a_number(katz_deli, "David")
 
 def line(katz_deli)
@@ -20,8 +20,3 @@ def now_serving(katz_deli)
   "Currently serving " + katz_deli.shift
 end
 
-now_serving(katz_deli)
-
-line(katz_deli)
-
-take_a_number(katz_deli, "Greg")
