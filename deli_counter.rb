@@ -1,33 +1,28 @@
-deli_line = []
+katz_deli = []
 
-def take_a_number(deli_line, name)
-  deli_line << name
-  deli_line.count
+def take_a_number(katz_deli, name)
+    katz_deli << name
+    katz_deli.count
 end
 
-p take_a_number(deli_line, "David")
-p take_a_number(deli_line, "Kyle")
+# p take_a_number(katz_deli, "David")
 
-def line(deli_line)
-  pretty_line = deli_line.collect.with_index do |name, index|
+def line(katz_deli)
+  the_line = katz_deli.collect.with_index do |name, index|
     "#{index + 1}. #{name}"
   end
-  "The line is currently: " + pretty_line.join(' ')
+ puts "The line is currently: " + the_line.join(' ')
 end
 
-p line(deli_line)
+line(katz_deli)
 
-def now_serving(deli_line)
-  "Currently serving " + deli_line.shift
+def now_serving(katz_deli)
+  "Currently serving " + katz_deli.shift
 end
 
-p now_serving(deli_line)
+now_serving(katz_deli)
 
-p line(deli_line)
+line(katz_deli)
 
-p take_a_number(deli_line, "Greg")
-p take_a_number(deli_line, "Rosie")
+take_a_number(katz_deli, "Greg")
 
-p line(deli_line)
-
-p now_serving(deli_line)
